@@ -1,0 +1,158 @@
+@font-face {
+    font-family: sukhumvitset-thin;
+    src: url(sukhumvitset-thin-webfont.ttf);
+}
+
+
+html {
+  font-size: 18px;
+  font-family: "sukhumvitset-thin", sans-serif !important;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "sukhumvitset-thin", sans-serif !important;
+  background: #4c4b4b;
+  color: #fff!important;
+  font-weight: 700;
+}
+
+hr {
+  width: 90%;
+  margin-bottom: 5px;
+  border: 1.5px solid transparent;
+  border-color: #eeebe7;
+}
+
+input {
+  font-size: 14px;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 1px solid gray;
+  padding-left: 10px;
+  border-radius: 5px
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  padding-left: 20px;
+  display: table-row;
+}
+
+td {
+  margin-bottom: 10px;
+  align: middle;
+  vertical-align: inherit;
+  text-align: center;
+  border: none;
+}
+
+select {
+  width: 100%;
+  border-radius: 5px;
+  /*background-color: #eeebe7;*/
+  color : #000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input {
+  color: #000!important;
+}
+
+
+.panel {
+  width: 70%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 15%;
+  /*margin-right: 25%;*/
+  margin-bottom: 20px;
+  background-color: #a5a2a2;
+}
+
+.panel-body {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.panel-heading{
+  padding-top: 25px;
+  background-color: #a5a2a2!important;
+  border: none;
+  font-size: 30px!important;
+  color: #fff!important;
+}
+
+p {
+  margin: 10px;
+}
+
+#Topic {
+  text-align: center;
+  font-size: 23px;
+}
+
+#Topic2 {
+  font-family: "sukhumvitset-thin", sans-serif !important;
+  text-align: center;
+  font-size: 18px;
+}
+
+#tb1L {
+  width: 45%;
+  float: left;
+}
+
+#tb1R {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+#tb2L {
+  width: 45%;
+  float: left;
+  margin-bottom: 0px;
+  padding-left: 10%;
+}
+
+#tb2R {
+  width: 50%;
+  float: left;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+#tb3L {
+  text-align: center;
+  padding-left: 5%;
+  width: 22%;
+  float: left;
+  margin-bottom: 0px;
+}
+
+#tb3M {
+  text-align: center;
+  width: 50%;
+  float: left;
+  margin-bottom: 0px;
+}
+
+#tb3R {
+  text-align: center;
+  width: 22%;
+  float: left;
+  margin-bottom: 0px;
+}
+/**/

@@ -1,0 +1,69 @@
+
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" href="./IP_Subnet_Cal.css"> <link rel="stylesheet" href="./bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+
+  <title>Subnet Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+
+  <div class="panel panel-default">
+    <p class="panel-heading" id="Topic">Subnet Calculator</p>
+    <table class="panel-body">
+      <form id="form_network_class" action="javascript:change_subnet();">
+        <tr>
+          <td id="tb1L">
+            NETWORK CLASS
+          </td>
+          <td id="tb1R">
+            <input name="network_class" type="radio" value="any" onclick="this.form.submit();" checked> ANY
+            <input name="network_class" type="radio" value="A" onclick="this.form.submit();" style="margin-left:10px"> A
+            <input name="network_class" type="radio" value="B" onclick="this.form.submit();" style="margin-left:10px"> B
+            <input name="network_class" type="radio" value="C" onclick="this.form.submit();" style="margin-left:10px"> C
+          </td>
+        </tr>
+      </form>
+      <form id="form_calculate" action="javascript:get_result();">
+        <tr>
+          <td id="tb1L">
+            SUBNET
+          </td>
+          <td id="tb1R" >
+            <select class="decorated"name="subnet" id="subnet" >
+              <script> javascript:createChoice(1); </script>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td id="tb1L">
+            IP ADDRESS
+          </td>
+          <td id="tb1R">
+            <input id="IP_Address" type="text" value="255.255.255.255" pattern="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
+          </td>
+        </tr>
+        <tr><td><button type="submit" class='btn btn-success btn-md'> CALCULATE </button><td></tr>
+      </form>
+    </table>
+  </div>
+
+  <div class="row" id="result">
+    <div id="tb2" >
+    </div>
+
+    <div id="tb3" >
+    </div>
+  </div>
+
+</body>
+
+</html>
